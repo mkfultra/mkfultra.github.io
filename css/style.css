@@ -1,9 +1,56 @@
+.center {
+    margin: auto;
+}
+
+.x50 {
+    width: 50%;
+}
+
+.x66 {
+    width: 66%;
+}
+
+.xauto {
+    width: auto;
+}
+
+a.footer {
+    color: lightcoral;
+}
+
+a.img {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+}
+
 body {
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: firebrick;
+    color: white;
+    padding: 1%; 
 }
 
 img.social {
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
+}
+
+table {
+    width: 100%;
+}
+
+th.x33 {
+    font-weight: normal;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+
+tr {
+    width: 100%;
 }
