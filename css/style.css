@@ -15,7 +15,7 @@
 }
 
 a.footer {
-    color: lightcoral;
+    color: moccasin;
 }
 
 a.img {
@@ -29,7 +29,7 @@ body {
 }
 
 footer {
-    background-color: firebrick;
+    background-color: orange;
     color: white;
     padding: 1%; 
 }
