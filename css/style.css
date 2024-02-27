@@ -1,5 +1,29 @@
+:root {
+    --primary-color-1: #ff9625;
+    --primary-color-2: #eb6810;
+    --white-light-color: #ffffff;
+    --white-dark-color: #eeeeee;
+    --gray-light-color: #f8f8f8;
+    --gray-dark-color: #aaaaaa;
+    --black-light-color: #333333;
+    --black-dark-color: #222222;
+}
+
 .center {
     margin: auto;
+}
+
+.x1-7 {
+    background-color: var(--gray-light-color);
+    width: 14.28%;
+}
+
+.x6-7 {
+    width: 85.71%;
+}
+
+.x25 {
+    width: 25%;
 }
 
 .x50 {
@@ -15,7 +39,12 @@
 }
 
 a.footer {
-    color: lightcoral;
+    color: #ffe7c0;
+}
+
+a.header {
+    color: #ffe7c0;
+    text-decoration: none;
 }
 
 a.img {
@@ -24,31 +53,53 @@ a.img {
 }
 
 body {
+    color: var(--black-light-color);
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 14px;
+    font-size: 1em;
+    margin: 0;
 }
 
 footer {
-    background-color: firebrick;
-    color: white;
+    background: linear-gradient(0deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
+    /*background-color: var(--primary-color-1);*/
+    color: ghostwhite;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 0%;
+}
+
+h2 {
+    color: #999999;
+    font-size: 1.25em;
+    font-style: italic;
+    margin-top: 0%;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: ghostwhite;
     padding: 1%; 
 }
 
+img.photo {
+    border-radius: 50%;
+    width: 100%;
+}
+
 img.social {
-    height: 28px;
-    width: 28px;
+    height: 1em;
+    width: 1em;
 }
 
 table {
     width: 100%;
 }
 
-th.x33 {
+th {
     font-weight: normal;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    width: 33%;
+    padding: 1em;
 }
 
 tr {
