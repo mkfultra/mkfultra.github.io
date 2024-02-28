@@ -1,6 +1,7 @@
 :root {
     --primary-color-1: #ff9625;
     --primary-color-2: #eb6810;
+    --link-light-color: #ffe7c0;
     --white-light-color: #ffffff;
     --white-dark-color: #eeeeee;
     --gray-light-color: #f8f8f8;
@@ -9,8 +10,21 @@
     --black-dark-color: #222222;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .center {
     margin: auto;
+}
+
+.fade-in-1s {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
 }
 
 .x1-7 {
@@ -39,12 +53,7 @@
 }
 
 a.footer {
-    color: #ffe7c0;
-}
-
-a.header {
-    color: #ffe7c0;
-    text-decoration: none;
+    color: var(--link-light-color);
 }
 
 a.img {
@@ -56,13 +65,15 @@ body {
     color: var(--black-light-color);
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 1em;
+    height: 90vh;
     margin: 0;
+    padding: 0;
 }
 
 footer {
     background: linear-gradient(0deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
-    /*background-color: var(--primary-color-1);*/
     color: ghostwhite;
+    height: 10vh;
 }
 
 h1 {
@@ -75,13 +86,7 @@ h2 {
     font-size: 1.25em;
     font-style: italic;
     font-weight: 100;
-    margin-top: 0%;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: ghostwhite;
-    padding: 1%; 
+    margin-top: 5%;
 }
 
 img.photo {
@@ -90,11 +95,13 @@ img.photo {
 }
 
 img.social {
-    height: 1em;
-    width: 1em;
+    height: 1.25em;
+    width: 1.25em;
 }
 
 table {
+    height: inherit;
+    border-spacing: 0;
     width: 100%;
 }
 
@@ -104,5 +111,6 @@ th {
 }
 
 tr {
+    height: auto;
     width: 100%;
 }
