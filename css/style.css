@@ -15,6 +15,19 @@
     100% { opacity: 1; }
 }
 
+input[type=checkbox] {
+    display: none; /* Hide checkboxes */
+}
+
+input[type=checkbox]:checked + .label {
+    background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%);
+    color: #fff;
+}
+
+#text {
+    font-size: 1.25em;
+}
+
 .center {
     margin: auto;
 }
@@ -27,13 +40,22 @@
     -ms-animation: fadeIn 1s;
 }
 
-.x1-7 {
-    background-color: var(--gray-light-color);
-    width: 14.28%;
+.label {
+    border: 0px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 17px;
 }
 
-.x6-7 {
-    width: 85.71%;
+.x1-6 {
+    background-color: var(--gray-light-color);
+    width: 16.67%;
+}
+
+.x4-6 {
+    padding: 3em;
+    width: 66.67%;
 }
 
 .x25 {
@@ -54,11 +76,27 @@
 
 a.footer {
     color: var(--link-light-color);
+    text-decoration: none;
+}
+
+a.footer:hover {
+    text-decoration: underline;
 }
 
 a.img {
     padding: 0px 5px 0px 5px;
     text-decoration: none;
+}
+
+a.link {
+    color: var(--primary-color-2);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a.link:hover {
+    text-decoration: underline;
 }
 
 body {
@@ -73,30 +111,51 @@ body {
 footer {
     background: linear-gradient(0deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
     color: ghostwhite;
+    font-size: 1.25em;
     height: 10vh;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 0%;
 }
 
 h2 {
     color: #999999;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: 100;
-    margin-top: 5%;
+    margin: 5% 0 7% 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 1%;
+}
+
+hr {border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--white-light-color), var(--primary-color-2), var(--white-light-color));
+}
+
+img.external {
+    height: 0.75em;
+    width: 0.75em;
 }
 
 img.photo {
     border-radius: 50%;
-    width: 100%;
+    width: 80%;
 }
 
 img.social {
-    height: 1.25em;
-    width: 1.25em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+p {
+    line-height: 1.5;
 }
 
 table {

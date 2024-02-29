@@ -5,13 +5,14 @@
         <meta name="description" content="mkfultra.ca is under construction. Please check back later!">
         <meta name="keywords" content="cybersecurity, github pages, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/functions.js"></script>
     </head>
     <body class="fade-in-1s">
         <table>
             <tr class="xauto">
-                <th class="x1-7">
+                <th class="x1-6">
                     <img alt="Photograph, November 2023" class="photo" src="assets/photo/mkf.jpg">
                     <h1>
                         Matthew K. Fullerton
@@ -32,11 +33,22 @@
                         </picture>
                     </a>
                 </th>
-                <th class="x6-7">
+                <th class="x4-6">
                     <h1>
-                        <span style="color: var(--primary-color-1);">&#9888;</span> mkfultra.ca is currently under construction. Please check back later! <span style="color: var(--primary-color-1);">&#9888;</span>
+                        Professional Portfolio
                     </h1>
+                    <h3>
+                        <span style="color: var(--primary-color-1); font-weight: 100;">&#9888;</span> mkfultra.ca is currently under construction. There may be missing content! <span style="color: var(--primary-color-1); font-weight: 100;">&#9888;</span>
+                    </h3>
+                    <p>
+                        <label><input id="education" onclick="printParagraph('education')" type="checkbox" value="Education"><span class="label">Education</span></label> |
+                        <label><input id="experience" onclick="printParagraph('experience')" type="checkbox" value="Experience"><span class="label">Experience</span></label> |
+                        <label><input id="projects" onclick="printParagraph('projects')" type="checkbox" value="Projects"><span class="label">Projects</span></label> |
+                        <label><input id="community" onclick="printParagraph('community')" type="checkbox" value="Community"><span class="label">Community</span></label>
+                        <p id="text"></p>
+                    </p>
                 </th>
+                <th class="x1-6"></th>
             </tr>
         </table>
         <!-- Footer -->
@@ -48,8 +60,6 @@
                             © 2024
                             |
                             <a class="footer" href="https://cira.ca/en/ca-domains/whois/?domain=mkfultra.ca&whois=true" target="_blank">Whois</a>
-                            |
-                            <a class="footer" href="sitemap.html">Sitemap</a>
                         </p>
                     </th>
                     <th class="x50">
