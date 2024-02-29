@@ -111,6 +111,11 @@ body {
     padding: 0;
 }
 
+div.white-glow {
+    background-color: var(--white-light-color);
+    box-shadow: 0px 0px 5px 5px var(--white-light-color);
+}
+
 footer {
     background: linear-gradient(0deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
     color: ghostwhite;
