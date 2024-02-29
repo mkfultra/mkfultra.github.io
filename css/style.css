@@ -45,7 +45,7 @@ input[type=checkbox]:checked + .label {
     border-radius: 25px;
     display: inline-block;
     font-size: 1.25em;
-    padding: 17px;
+    padding: 13px 17px 17px 17px;
 }
 
 .x1-6 {
@@ -156,6 +156,7 @@ img.social {
 
 p {
     line-height: 1.5;
+    margin: 0;
 }
 
 table {
