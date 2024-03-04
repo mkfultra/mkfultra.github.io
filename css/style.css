@@ -1,9 +1,9 @@
 /* Default and Light Mode */
 
 :root {
-    --primary-color-1: #ff9625;
-    --primary-color-2: #eb6810;
-    --link-light-color: #ffe7c0;
+    --primary-color-1: rgb(105, 221, 51);
+    --primary-color-2: rgb(47, 94, 9);
+    --link-light-color: rgb(219, 241, 211);
     --white-light-color: #ffffff;
     --white-dark-color: #eeeeee;
     --gray-light-color: #f8f8f8;
@@ -12,22 +12,21 @@
     --black-dark-color: #222222;
 }
 
+:checked + span.label {
+    background-position: left bottom;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-input[type=checkbox] {
-    display: none; /* Hide checkboxes */
-}
-
-input[type=checkbox]:checked + .label {
-    background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%);
-    color: #fff;
-}
-
 #text {
     font-size: 1.25em;
+}
+
+input[type=checkbox] {
+    display: none;
 }
 
 .center {
@@ -36,28 +35,22 @@ input[type=checkbox]:checked + .label {
 
 .fade-in-1s {
     animation: fadeIn 1s;
-    -webkit-animation: fadeIn 1s;
-    -moz-animation: fadeIn 1s;
-    -o-animation: fadeIn 1s;
-    -ms-animation: fadeIn 1s;
-}
-
-.label {
-    border: 0px;
-    border-radius: 25px;
-    display: inline-block;
-    font-size: 1.25em;
-    padding: 13px 17px 17px 17px;
 }
 
 .x1-6 {
-    background-color: var(--gray-light-color);
+    background-color: rgba(0,0,0,0);
+    padding: 0;
     width: 16.67%;
 }
 
 .x4-6 {
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
-    padding: 3em;
+    background-color: var(--white-light-color);
+    background-image: linear-gradient(to right, var(--black-light-color) 1px, transparent 1px), linear-gradient(to bottom, var(--black-light-color) 1px, transparent 1px);
+    background-position: center center;
+    background-size: 2.499% 3.275%;
+    border-color: var(--white-light-color);
+    border-style: solid;
+    border-width: 1px;
     width: 66.67%;
 }
 
@@ -103,48 +96,75 @@ a.link:hover {
 }
 
 body {
+    background-image: url("../assets/photo/bg.jpg");
+    background-position: absolute;
+    background-size: cover;
     color: var(--black-light-color);
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
     height: 90vh;
     margin: 0;
     padding: 0;
 }
 
+div.vertical-center {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 div.white-glow {
-    background-color: var(--white-light-color);
-    box-shadow: 0px 0px 5px 5px var(--white-light-color);
+    background: linear-gradient(rgba(255, 255, 255, 0) -100%, var(--white-light-color) 25%, var(--white-light-color) 75%, rgba(255, 255, 255, 0) 200%);
+    background-position: center center 0% 0% -5px 0px;
+    background-size: auto;
+    border-color: var(--white-light-color);
+    border-style: solid;
+    border-width: 1px;
+    height: 100%;
+    width: 100%;
 }
 
 footer {
-    background: linear-gradient(0deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
+    background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%);
     color: ghostwhite;
     font-size: 1.25em;
     height: 10vh;
+    /* margin: 0% 16.67% 0% 16.67%; */
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 0%;
+    color: var(--black-dark-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 56px;
+    font-style: italic;
+    letter-spacing: 0.25em;
+    transform: scaleY(2);
 }
 
 h2 {
-    color: var(--gray-dark-color);
-    font-size: 1.5em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
     font-style: italic;
-    font-weight: 100;
-    margin: 5% 0 7% 0;
+    font-weight: normal;
+    margin-bottom: 5%;
+    transform: scaleY(2);
 }
 
 h3 {
-    font-size: 1.5em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
     font-weight: normal;
-    margin-top: 1%;
+    margin-top: 6%;
+    transform: scaleY(1.5);
 }
 
-hr {border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, var(--white-light-color), var(--primary-color-1), var(--white-light-color));
+h3.content {
+    color: var(--ink-color);
+    font-weight: bold;
 }
 
 img.external {
@@ -167,6 +187,17 @@ p {
     margin: 0;
 }
 
+span.label {
+    background: linear-gradient(to right, rgb(253, 255, 120) 50%, rgba(0,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    border: 0px;
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 5px 10px 5px 10px;
+    transition: all 1s ease;
+}
+
 table {
     height: inherit;
     border-spacing: 0;
@@ -175,7 +206,8 @@ table {
 
 th {
     font-weight: normal;
-    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
 }
 
 tr {
