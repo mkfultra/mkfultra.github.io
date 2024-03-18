@@ -127,9 +127,7 @@ div.white-glow {
 }
 
 footer {
-    background-attachment: fixed;
-    background-image: url("../assets/photo/footer.jpg");
-    background-size: 1000px;
+    background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%);
     color: ghostwhite;
     font-size: 12px;
     height: 10vh;
