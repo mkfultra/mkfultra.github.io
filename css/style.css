@@ -22,7 +22,7 @@
 }
 
 #text {
-    font-size: 1.25em;
+    font-size: 12px;
 }
 
 input[type=checkbox] {
@@ -101,7 +101,7 @@ body {
     background-size: cover;
     color: var(--black-light-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     height: 90vh;
     margin: 0;
     padding: 0;
@@ -127,9 +127,11 @@ div.white-glow {
 }
 
 footer {
-    background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%);
+    background-attachment: fixed;
+    background-image: url("../assets/photo/footer.jpg");
+    background-size: 1000px;
     color: ghostwhite;
-    font-size: 1.25em;
+    font-size: 12px;
     height: 10vh;
     /* margin: 0% 16.67% 0% 16.67%; */
 }
@@ -137,7 +139,7 @@ footer {
 h1 {
     color: var(--black-dark-color);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 56px;
+    font-size: 48px;
     font-style: italic;
     letter-spacing: 0.25em;
     transform: scaleY(2);
@@ -146,7 +148,7 @@ h1 {
 h2 {
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-size: 24px;
     font-style: italic;
     font-weight: normal;
     margin-bottom: 5%;
@@ -156,7 +158,7 @@ h2 {
 h3 {
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: normal;
     margin-top: 6%;
     transform: scaleY(1.5);
@@ -193,7 +195,7 @@ span.label {
     background-position:right bottom;
     border: 0px;
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 12px;
     padding: 5px 10px 5px 10px;
     transition: all 1s ease;
 }
