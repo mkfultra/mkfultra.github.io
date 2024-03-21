@@ -1,6 +1,6 @@
 function printParagraph(choice) {
-    var content = choice;
 
+    var content = choice;
     var education = document.getElementById("education");
     var experience = document.getElementById("experience");
     var projects = document.getElementById("projects");
