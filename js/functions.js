@@ -27,7 +27,7 @@ function printParagraph(choice) {
         education.checked = false;
         experience.checked = false;
         projects.checked = false;
-        text.innerHTML = '<div class="fade-in-1s"><p>I am a member of the <a class="link" href="https://member.cira.ca" target="_blank">CIRA</a><img alt="External Link Icon" class="external" src="assets/icons/ext.svg">.</p><br><p>I spend much of my free time volunteering in choirs around the city. I sing in the tenor section of the <a class="link" href="https://kappellakyrie.org/" target="_blank">Kappella Kyrie Slavic Chamber Choir</a><img alt="External Link Icon" class="external" src="assets/icons/ext.svg"> as well as the schola and choir of the <a class="link" href="https://vitalgrandinchaplaincy.ca/get-involved/sacred-music" target="_blank">Vital Grandin Chaplaincy</a><img alt="External Link Icon" class="external" src="assets/icons/ext.svg">.</p></div>';
+        text.innerHTML = '<div class="fade-in-1s"><p>I have been a member of the <a class="link" href="https://member.cira.ca" target="_blank">CIRA</a><img alt="External Link Icon" class="external" src="assets/icons/ext.svg"> since February of 2024.</p><br><p>I spend much of my free time volunteering in choirs around the city, specifically the tenor section of the <a class="link" href="https://kappellakyrie.org/" target="_blank">Kappella Kyrie Slavic Chamber Choir</a><img alt="External Link Icon" class="external" src="assets/icons/ext.svg"> as well as the schola and choir of the <a class="link" href="https://vitalgrandinchaplaincy.ca/get-involved/sacred-music" target="_blank">Vital Grandin Chaplaincy</a><img alt="External Link Icon" class="external" src="assets/icons/ext.svg">.</p></div>';
     } else {
         text.innerHTML = "";
     }
