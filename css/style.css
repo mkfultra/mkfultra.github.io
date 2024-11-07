@@ -1,8 +1,8 @@
 /* Default and Light Mode */
 
 :root {
-    --primary-color-1: rgb(105, 221, 51);
-    --primary-color-2: rgb(47, 94, 9);
+    --primary-color-1: rgb(83, 192, 33);
+    --primary-color-2: rgb(72, 131, 23);
     --link-light-color: rgb(219, 241, 211);
     --white-light-color: #ffffff;
     --white-dark-color: #eeeeee;
@@ -127,7 +127,8 @@ div.white-glow {
 }
 
 footer {
-    background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%);
+    /* background: linear-gradient(0deg, var(--primary-color-2) 0%, var(--primary-color-1) 100%); */
+    background: var(--primary-color-2);
     color: ghostwhite;
     font-size: 12px;
     height: 10vh;
@@ -144,7 +145,7 @@ h1 {
 }
 
 h2 {
-    color: var(--black-dark-color);
+    color: var(--white-light-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     font-style: italic;
@@ -154,7 +155,7 @@ h2 {
 }
 
 h3 {
-    color: var(--black-dark-color);
+    color: var(--white-light-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: bold;
