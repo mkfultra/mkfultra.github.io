@@ -22,7 +22,7 @@ function printParagraph(choice) {
         education.checked = false;
         experience.checked = false;
         community.checked = false;
-        text.innerHTML = '<div class="fade-in-1s"><p>I am currently working on creating a website that will allow visitors to peruse and reference the videogame reviews written in the Nintendo-centric videogame magazine <i>Nintendo Power</i>. This is something of a preservation project for me as the magazine proper was discontinued in December of 2012 and was my favorite gaming magazine as a kid. I will only catalog reviews and ratings of issues I personally own, which means I am always on the lookout for issues I have not acquired yet.</p></div>';
+        text.innerHTML = '<div class="fade-in-1s"><p>I am currently working on creating a website that will allow visitors to peruse and reference the videogame reviews written in the Nintendo-centric videogame magazine <i>Nintendo Power</i>. This is something of a preservation project for me as the magazine proper was discontinued in December of 2012 and was my favorite gaming magazine as a kid. I will only catalog reviews and ratings of issues I personally own, which means I am always on the lookout for issues I have not acquired yet.</p><p>I&apos;m currently working through hackthissite.org, but I have not finished yet!</p></div>';
     } else if (doc.checked == true && content == "community"){
         education.checked = false;
         experience.checked = false;
