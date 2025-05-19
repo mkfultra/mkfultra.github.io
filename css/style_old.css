@@ -45,7 +45,6 @@ input[type=checkbox] {
 
 .x4-6 {
     background-color: var(--white-light-color);
-    vertical-align: top;
     width: 66.67%;
 }
 
@@ -63,10 +62,6 @@ input[type=checkbox] {
 
 .xauto {
     width: auto;
-}
-
-.wordmark {
-    margin: 10vh 0 5vh 0;
 }
 
 a.footer {
@@ -106,30 +101,46 @@ body {
     padding: 0;
 }
 
+div.vertical-center {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 footer {
     background: var(--primary-color-2);
     color: ghostwhite;
     font-size: 12px;
     height: 5vh;
-    vertical-align: bottom;
 }
 
 h1 {
-    color: var(--black-light-color);
+    color: var(--black-dark-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
     font-style: italic;
-    letter-spacing: 0.175em;
-    margin: 0;
+    letter-spacing: 0.25em;
     transform: scaleY(2);
 }
 
 h2 {
-    color: var(--black-light-color);
+    color: var(--white-light-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5%;
+    transform: scaleY(2);
+}
+
+h3 {
+    color: var(--white-light-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: bold;
-    margin: 2.5vh 0 2.5vh 0;
+    margin-top: 6%;
     transform: scaleY(1.5);
 }
 
@@ -145,13 +156,11 @@ img.external {
 
 img.photo {
     border-radius: 50%;
-    width: 17.5%;
+    width: 80%;
 }
 
 img.social {
     height: 18px;
-    margin-top: 1%;
-    transform: scaleY(0.75);
     width: auto;
 }
 
@@ -164,7 +173,7 @@ p {
 span.label {
     background: linear-gradient(to right, rgb(253, 255, 120) 50%, rgba(0,0,0,0) 50%);
     background-size: 200% 100%;
-    background-position: right bottom;
+    background-position:right bottom;
     border: 0px;
     display: inline-block;
     font-size: 12px;
@@ -176,10 +185,6 @@ table {
     height: inherit;
     border-spacing: 0;
     width: 100%;
-}
-
-td {
-    vertical-align:top;
 }
 
 th {
